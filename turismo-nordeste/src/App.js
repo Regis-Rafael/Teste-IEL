@@ -346,12 +346,14 @@ export default function App() {
   }, [rawData, filterEstados]);
 
   // When estado changes, drop cities that no longer belong
-  useEffect(() => {
+useEffect(() => {
     if (filterCidades.length && availableCidades.length) {
       const valid = filterCidades.filter(c => availableCidades.includes(c));
-      if (valid.length !== filterCidades.length) setFilterCidades(valid);
+      if (valid.length !== filterCidades.length) {
+        setFilterCidades(valid);
+      }
     }
-  }, [availableCidades]);
+  }, [availableCidades, filterCidades]);
 
   const hasFilters = filterEstados.length + filterCidades.length + filterMeses.length > 0;
   const noResults = hasFilters && filteredRows.length === 0;
