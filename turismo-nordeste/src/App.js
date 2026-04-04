@@ -375,11 +375,14 @@ export default function App() {
             Dashboard Turismo Nordeste
           </h1>
           <p style={{ color:t.muted, fontSize:'0.72rem', marginTop:6, fontWeight:300, letterSpacing:'0.07em', textTransform:'uppercase' }}>
-            Análise de desempenho · CE · PE · PI · RN
+            Análise de desempenho · CE · PE · PI · RN · 2024
           </p>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap' }}>
           <ThemeSwitcher current={themeName} onChange={setThemeName} t={t} />
+          <span style={{ background:`rgba(${hexToRgb(t.accent)},0.12)`, color:t.accent, fontSize:'0.68rem', fontWeight:600, padding:'5px 12px', borderRadius:20, border:`1px solid rgba(${hexToRgb(t.accent)},0.25)`, letterSpacing:'0.08em', textTransform:'uppercase' }}>
+            ● Dados Reais
+          </span>
         </div>
       </header>
 
