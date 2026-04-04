@@ -377,14 +377,11 @@ useEffect(() => {
             Dashboard Turismo Nordeste
           </h1>
           <p style={{ color:t.muted, fontSize:'0.72rem', marginTop:6, fontWeight:300, letterSpacing:'0.07em', textTransform:'uppercase' }}>
-            Análise de desempenho · CE · PE · PI · RN · 2024
+            Análise de desempenho · CE · PE · PI · RN
           </p>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap' }}>
           <ThemeSwitcher current={themeName} onChange={setThemeName} t={t} />
-          <span style={{ background:`rgba(${hexToRgb(t.accent)},0.12)`, color:t.accent, fontSize:'0.68rem', fontWeight:600, padding:'5px 12px', borderRadius:20, border:`1px solid rgba(${hexToRgb(t.accent)},0.25)`, letterSpacing:'0.08em', textTransform:'uppercase' }}>
-            ● Dados Reais
-          </span>
         </div>
       </header>
 
@@ -460,7 +457,7 @@ useEffect(() => {
       {/* FOOTER */}
       <footer style={{ marginTop:28, paddingTop:16, borderTop:`1px solid ${t.border}`, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:8 }}>
         <span style={{ fontSize:'0.68rem', color:t.muted }}>Fonte: base_case_turismo.xlsx · dados carregados dinamicamente</span>
-        <span style={{ fontSize:'0.68rem', color:t.muted }}>Dashboard Turismo Nordeste © 2024</span>
+        <span style={{ fontSize:'0.68rem', color:t.muted }}>Dashboard Turismo Nordeste</span>
       </footer>
 
       <style>{`
